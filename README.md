@@ -1,2 +1,3 @@
 # web2k22
-Just a simple webproject
+
+A simpler project than one would think
