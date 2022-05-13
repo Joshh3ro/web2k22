@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <!-- Navigation -->
+
+    <!-- #region Navigation -->
     <div class="wrapper">
         <div class="about">
             <div class="menu-btn">
@@ -28,7 +29,7 @@
 
             <div class="nav">
                 <ul class="main-menu">
-                    <li class="main-menu-item">
+                    <li class="main-menu-item" onclick="Home()">
                         <a href="./index.html">Home</a>
                     </li>
 
@@ -36,20 +37,23 @@
                         <a href="">Portfolio &nbsp; <ion-icon name="add">
                         </ion-icon></a>
                         <ul class="submenu">
-                            <li class="submenu-item">
-                                <a onclick="window.location.href='./index.html'">Liquid Dreams</a>
+                            <li class="submenu-item" onclick="Dreams()">
+                                <a href="">Liquid Dreams</a>
                             </li>
-                            <li class="submenu-item">
-                                <a onclick="window.location.href='./index.html'">Mint Panda</a>
+                            <li class="submenu-item" onclick="Panda()">
+                                <a href="">Mint Panda</a>
                             </li>
-                            <li class="submenu-item">
-                                <a onclick="window.location.href='./index.html'">Poly Project</a>
+                            <li class="submenu-item" onclick="Poly()">
+                                <a href="">Poly Project</a>
                             </li>
-                            <li class="submenu-item">
-                                <a onclick="window.location.href='./index.html'">Adobe XD Portfolio</a>
+                            <li class="submenu-item" onclick="XDPortfolio()">
+                                <a href="">Adobe XD Portfolio</a>
                             </li>
-                            <li class="submenu-item">
-                                <a onclick="window.location.href='./index.html'">Shape Mobile Game Concept</a>
+                            <li class="submenu-item" onclick="Shape()">
+                                <a href="">Shape Mobile Game Concept</a>
+                            </li>
+                            <li class="submenu-item" onclick="PortfolioMore()">
+                                <a href="">View More</a>
                             </li>
                         </ul>
                     </li>
@@ -58,13 +62,16 @@
                         <a href="">About &nbsp;<ion-icon name="add">
                         </ion-icon></a>
                         <ul class="submenu">
-                            <li class="submenu-item">
-                                <a coursor="pointer" onclick="window.location.href='./index.html'">A little about me</a>
+                            <li class="submenu-item" onclick="AboutMe()">
+                                <a href="">AboutMe</a>
+                            </li>
+                            <li class="submenu-item" onclick="Credits()">
+                                <a href="">Credits</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </div>
+            </div class="nav">
 
             <div class="contact">
                 <p class="mail"><ion-icon name="mail"></ion-icon>&nbsp;&nbsp;&nbsp;joshuasdacruz@gmail.com</p>
@@ -78,9 +85,7 @@
             </div>
         </div>
     </div>
-
-    
-    <!-- Main content -->
+    <!-- #endregion -->
 
     <!-- Scripts -->
     <script src="../js/links.js"></script>
