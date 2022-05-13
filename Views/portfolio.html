@@ -5,15 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="../Style Sheets/imagehandler.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 <body>
 
     <!-- #region Main Content -->
+    <!-- #region Images -->
     <div class="slide active">
         <div class="card">
             <div class="card-img" id="img01"></div>
+            <div class="card-content">
+                <p class="card-theme">Blender Learning Series</p>
+                <h2 class="card-header">Liquid Dreams</h2>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Eos possimus facere, facilis dicta neque 
+                    assumenda saepe esse quis deleniti. Placeat.
+                </p>
+                <a class="card-link">To Project</a>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="card">
+            <div class="card-img" id="img02"></div>
             <div class="card-content">
                 <p class="card-theme">Something</p>
                 <h2 class="card-header">Amogus</h2>
@@ -22,10 +40,37 @@
                     adipisicing elit. Eos possimus facere, facilis dicta neque 
                     assumenda saepe esse quis deleniti. Placeat.
                 </p>
-                <a href="" class="card-link">Open Project</a>
+                <a href="" class="card-link">To Project</a>
             </div>
         </div>
     </div>
-    <!-- #endregion  -->
+    <div class="slide">
+        <div class="card">
+            <div class="card-img" id="img03"></div>
+            <div class="card-content">
+                <p class="card-theme">Something</p>
+                <h2 class="card-header">Amogus</h2>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Eos possimus facere, facilis dicta neque 
+                    assumenda saepe esse quis deleniti. Placeat.
+                </p>
+                <a href="" class="card-link">To Project</a>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion Images -->
+    <div class="btns">
+        <button class="pn-btn" id="prev"></button>
+        <button class="pn-btn" id="next"></button>
+    </div>
+    <!-- #endregion  Main Content-->
+
+    <!-- #region Scripts -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/links.js"></script>
+    <script src="../js/slider.js"></script>
+    <!-- #endregion Scripts -->
+
 </body>
 </html>

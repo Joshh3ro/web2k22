@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+
+:root {
+    --text: #ffff;
+    --back: #ffff;
+    --bg: #272727;
+    --accent: #ffff6d;
+    --text-accent: grey;
+    --base-height: 100%;
+    --base-width: 100%;
+    --display: flex;
+    --main-font: "Helvetica";
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: var(--base-height);
+    font-family: var(--main-font);
+    background-color: var(--bg);
+    overflow: hidden;
+}
+
+.slide {
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: var(--base-width);
+    display: var(--display);
+    height: var(--base-height);
+}
+
+.card {
+    width: var(--base-width);
+    height: var(--base-height);
+    display: var(--display);
+    background: var(--back);
+}
+
+.card-img {
+    background-position: center;
+    width: 50%;
+    height: var(--base-height);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-content {
+    padding: 10% 5%;
+    box-sizing: border-box;
+    width: 50%;
+    background: var(--bg);
+}
+
+.card-theme {
+    font-weight: 900;
+    font-size: 1.7vmin;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    letter-spacing: 10px;
+    color: var(--text-accent);   
+}
+
+.card-header {
+    font-weight: 700;
+    font-size: 54px;
+    text-transform: capitalize;
+    line-height: 1;
+    margin: 3vmin 0 3.5vmin;
+    color: var(--text);
+    font-family: var(--main-font);
+}
+
+.card-text {
+    font-size: 1.6vmin;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 2.5vmin;
+    color: var(--text);
+    font-family: var(--main-font);
+}
+
+.card-link {
+    color: var(--text);
+    font-family: var(--main-font);
+    font-size: 1.8vmin;
+    display: block;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.card-link::after {
+    content: "→";
+}
+
+.btns {
+    position: absolute;
+    width: 4vmin;
+    height: 8vmin;
+    right: 2%;
+    bottom: 0;
+    top: 80%;
+    color: var(--text);
+    margin: auto 0;
+}
+
+.pn-btn {
+    color: var(--text);
+    width: var(--base-width);
+    height: 50%;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+#prev, #next {
+    position: relative;
+    cursor: pointer;
+}
+
+#prev:focus, #next:focus {
+    outline: none;
+}
+
+#prev:hover::after, #next:hover::after {
+    opacity: 1;
+}
+
+#prev::after, #next::after {
+    position: absolute;
+    width: var(base-width);
+    height: var(base-height);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+#prev::after {
+    content: "↑";
+}
+
+#next::after {
+    content: "↓";
+}
+
+/* #region images */
+
+#img01 {
+    background-image: url("../img/Liquid\ Dreams.jpg");
+}
+#img02 {
+    background-image: url("../img/Liquid\ Dreams.jpg");
+}
+#img03 {
+    background-image: url("../img/Liquid\ Dreams.jpg");
+}
+
+/* #endregion images */

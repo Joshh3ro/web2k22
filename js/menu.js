@@ -9,7 +9,7 @@ $('ul.main-menu li').click(function(e) {
 
 var t1 = new TimelineMax({paused: true});
 
-t1.to(".menu", 0.8, {
+t1.to(".menu", 0.4, {
     autoAlpha: 1
 });
 
