@@ -11,92 +11,112 @@
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 
 <body>
 
+    <!-- #region Menu Btn -->
+
+    <div class="about">
+        <div class="menu-btn">
+            <ion-icon name="menu"></ion-icon>
+        </div>
+    </div>
+
+    <!-- #endregion -->
+
     <!-- #region Navigation -->
-    <div class="wrapper">
-        <div class="about">
-            <!-- #region Menu Btn -->
-            <div class="menu-btn">
-                <ion-icon name="menu"></ion-icon>
-            </div>
-            <!-- #endregion -->
+    <div class="menu">
+        <div class="close-menu">
+            <ion-icon name="close"></ion-icon>
         </div>
 
-        <div class="menu">
-            <div class="close-menu">
-                <ion-icon name="close"></ion-icon>
-            </div>
+        <div class="nav">
+            <ul class="main-menu">
+                <li class="main-menu-item" onclick="Home()">
+                    <a href="">Home</a>
+                </li>
 
-            <div class="nav">
-                <ul class="main-menu">
-                    <li class="main-menu-item" onclick="Home()">
-                        <a href="">Home</a>
-                    </li>
+                <li class="main-menu-item">
+                    <a href="">Portfolio &nbsp; <ion-icon name="add">
+                        </ion-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu-item" onclick="Dreams()">
+                            <a href="">Liquid Dreams</a>
+                        </li>
+                        <li class="submenu-item" onclick="Panda()">
+                            <a href="">Mint Panda</a>
+                        </li>
+                        <li class="submenu-item" onclick="Poly()">
+                            <a href="">Poly Project</a>
+                        </li>
+                        <li class="submenu-item" onclick="XDPortfolio()">
+                            <a href="">Adobe XD Portfolio</a>
+                        </li>
+                        <li class="submenu-item" onclick="Shape()">
+                            <a href="">Shape Mobile Game Concept</a>
+                        </li>
+                        <li class="submenu-item more" id="More" onclick="PortfolioMore()">
+                            <a href="">View More</a>
+                        </li>
+                    </ul>
+                </li>
 
-                    <li class="main-menu-item">
-                        <a href="">Portfolio &nbsp; <ion-icon name="add">
-                            </ion-icon></a>
-                        <ul class="submenu">
-                            <li class="submenu-item" onclick="Dreams()">
-                                <a href="">Liquid Dreams</a>
-                            </li>
-                            <li class="submenu-item" onclick="Panda()">
-                                <a href="">Mint Panda</a>
-                            </li>
-                            <li class="submenu-item" onclick="Poly()">
-                                <a href="">Poly Project</a>
-                            </li>
-                            <li class="submenu-item" onclick="XDPortfolio()">
-                                <a href="">Adobe XD Portfolio</a>
-                            </li>
-                            <li class="submenu-item" onclick="Shape()">
-                                <a href="">Shape Mobile Game Concept</a>
-                            </li>
-                            <li class="submenu-item more" id="More" onclick="PortfolioMore()">
-                                <a href="">View More</a>
-                            </li>
-                        </ul>
-                    </li>
+                <li class="main-menu-item">
+                    <a href="">About &nbsp;<ion-icon name="add">
+                        </ion-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu-item" onclick="AboutMe()">
+                            <a href="">AboutMe</a>
+                        </li>
+                        <li class="submenu-item" onclick="Credits()">
+                            <a href="">Credits</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-                    <li class="main-menu-item">
-                        <a href="">About &nbsp;<ion-icon name="add">
-                            </ion-icon></a>
-                        <ul class="submenu">
-                            <li class="submenu-item" onclick="AboutMe()">
-                                <a href="">AboutMe</a>
-                            </li>
-                            <li class="submenu-item" onclick="Credits()">
-                                <a href="">Credits</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div class="nav">
+        <div class="contact">
+            <p class="mail">
+                <ion-icon name="mail"></ion-icon>&nbsp;&nbsp;&nbsp;joshuasdacruz@gmail.com
+            </p>
+        </div>
 
-            <div class="contact">
-                <p class="mail">
-                    <ion-icon name="mail"></ion-icon>&nbsp;&nbsp;&nbsp;joshuasdacruz@gmail.com
-                </p>
-            </div>
-
-            <div class="media">
-                <ul>
-                    <li><a onclick="Twitter()">Twitter</a></li>
-                    <li><a onclick="Behance()">Behance</a></li>
-                    <li><a onclick="Instagram()">Instagram</a></li>
-                    <li><a onclick="Dribble()">Dribbble</a></li>
-                    <li><a onclick="ArtStation()">Dribbble</a></li>
-                </ul>
-            </div>
+        <div class="media">
+            <ul>
+                <li><a onclick="Twitter()">Twitter</a></li>
+                <li><a onclick="Behance()">Behance</a></li>
+                <li><a onclick="Instagram()">Instagram</a></li>
+                <li><a onclick="Dribble()">Dribbble</a></li>
+                <li><a onclick="ArtStation()">Artstation</a></li>
+            </ul>
         </div>
     </div>
     <!-- #endregion -->
 
+    <!-- #region Main Content -->
+    <div class="wrapper-img">
+        <div class="box"></div>
+        <div>
+            <img src="./img/Profile.jpg" alt="Profile Picture" class="img">
+        </div>
+    </div>
 
+    <div class="header">
+        <h1 class="header-1">
+            Joshua Dacruz
+        </h1>
+        <h1 class="header-2">
+            Multi Media Designer <br>
+        </h1>
+        <p>
+            → Web Development / UI / UX / VFX / Prototyping / Motion Design
+        </p>
+    </div>
+    <!-- #endregion -->
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>

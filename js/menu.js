@@ -29,13 +29,6 @@ t1.staggerFrom(".media ul li", 1, {
     ease: Power3.easeInOut
 }, 0.1, "-=2");
 
-t1.from(".call", 1, {
-    delay: -2,
-    opacity: 0,
-    y: 10,
-    ease: Power3.easeInOut
-});
-
 t1.from(".mail", 1, {
     delay: -1.6,
     opacity: 0,
@@ -44,8 +37,6 @@ t1.from(".mail", 1, {
 });
 
 t1.reverse();
-
-
 
 $(document).on("click", ".menu-btn", function() {
     t1.reversed(!t1.reversed());

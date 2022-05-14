@@ -1,36 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,900&display=swap');
 
 :root {
     --text: #ffff;
-    --bg: #272727;
+    --bg: #161616;
     --back: #ffff;
     --accent: #ffff6d;
-    --text-accent: grey;
+    --text-accent: #a0acb6;
     --base-height: 100vh;
-    --main-font: "Helvetica";
+    --main-font: "Roboto";
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: var(--base-height);
     font-family: var(--main-font);
-    background-color: #272727;
+    background-color: var(--bg);
 }
 
-.wrapper {
-    width: 100%;
-    height: var(--base-height);
-}
-
+/* #region Menu  */
 .menu-btn {
     position: fixed;
     margin: 1em;
-    font-size: 24px;
-    color: #161616;
+    font-size: 27px;
+    color: var(--text);
+    cursor: pointer;
 }
 
 .menu {
@@ -41,13 +40,15 @@ html, body {
     background: var(--bg);
     opacity: 0;
     z-index: 1;
+    font-weight: 600;
 }
 
 .close-menu {
     position: fixed;
     margin: 1em;
-    font-size: 24px;
+    font-size: 27px;
     color: var(--text);
+    cursor: pointer;
     z-index: 1;
 }
 
@@ -141,7 +142,55 @@ a ion-icon {
     text-decoration: none;
 }
 
-@media(max-width: 960px) {
+/* #endregion  */
+
+/* #region Main Content */
+.wrapper-img {
+    overflow: hidden;
+    position: relative;
+    top: 10% !important;
+    left: 45%;
+    transform: translate(-50%, 0%);
+    width: 30%;
+    height: 90vh;
+}
+
+img {
+    width: 97%;
+    height: 90%;
+    object-fit: cover;
+    filter: var(--greyscale);
+    border-radius: 4px;
+}
+
+.header {
+    color: var(--text);
+    position: absolute;
+    top: 48%;
+    left: 28%;
+    transform: translate(-20%, -50%);
+    font-weight: 200;
+}
+
+.header h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header-1 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.header-2 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+/* #endregion */
+
+@media(max-width: 900px) {
     h1 {
         font-size: 20px;
     }
@@ -152,6 +201,44 @@ a ion-icon {
 
     .contact {
         display: none;
+    }
+
+    .wrapper-img {
+        width: 90%;
+    }
+
+    .header {
+        text-align: left;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .nav {
+        margin-top: 20%;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .wrapper-img {
+        display: none;
+    }
+
+    .header {
+        text-align: left;
+    }
+
+    .header h1 {
+        font-size: 40px;
     }
 }
 

@@ -1,6 +1,5 @@
 //Internal Links
 function Home() {window.open("../index.html", "_top"); }
-
 //Portfolio Links
 function Dreams() {window.open("../index.html", "_top"); }
 function Panda() {window.open("../index.html", "_top"); }
