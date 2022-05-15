@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,19 +11,99 @@
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
+
 <body>
 
     <!-- #region Main Content -->
+    <!-- #region Menu Btn -->
+
+    <div class="about">
+        <div class="menu-btn">
+            <ion-icon name="menu"></ion-icon>
+        </div>
+    </div>
+
+    <!-- #endregion -->
+
+    <!-- #region Navigation -->
+    <div class="menu">
+        <div class="close-menu">
+            <ion-icon name="close"></ion-icon>
+        </div>
+
+        <div class="nav">
+            <ul class="main-menu">
+                <li class="main-menu-item" onclick="Home()">
+                    <a href="">Home</a>
+                </li>
+
+                <li class="main-menu-item">
+                    <a href="">Portfolio &nbsp; <ion-icon name="add">
+                        </ion-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu-item" onclick="Dreams()">
+                            <a href="">Liquid Dreams</a>
+                        </li>
+                        <li class="submenu-item" onclick="Panda()">
+                            <a href="">Mint Panda</a>
+                        </li>
+                        <li class="submenu-item" onclick="Poly()">
+                            <a href="">Poly Project</a>
+                        </li>
+                        <li class="submenu-item" onclick="XDPortfolio()">
+                            <a href="">Adobe XD Portfolio</a>
+                        </li>
+                        <li class="submenu-item" onclick="Shape()">
+                            <a href="">Shape Mobile Game Concept</a>
+                        </li>
+                        <li class="submenu-item more" id="More" onclick="PortfolioMore()">
+                            <a href="">View More</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="main-menu-item">
+                    <a href="">About &nbsp;<ion-icon name="add">
+                        </ion-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu-item" onclick="AboutMe()">
+                            <a href="">AboutMe</a>
+                        </li>
+                        <li class="submenu-item" onclick="Credits()">
+                            <a href="">Credits</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <p class="mail">
+                <ion-icon name="mail"></ion-icon>&nbsp;&nbsp;&nbsp;joshuasdacruz@gmail.com
+            </p>
+        </div>
+
+        <div class="media">
+            <ul>
+                <li><a onclick="Twitter()">Twitter</a></li>
+                <li><a onclick="Behance()">Behance</a></li>
+                <li><a onclick="Instagram()">Instagram</a></li>
+                <li><a onclick="Dribble()">Dribbble</a></li>
+                <li><a onclick="ArtStation()">Artstation</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- #endregion -->
     <!-- #region Images -->
     <div class="slide active">
         <div class="card">
             <div class="card-img" id="img01"></div>
             <div class="card-content">
-                <p class="card-theme">3D Modeling and VFX Collection</p>
+                <p class="card-theme">3D Modeling / VFX Collection</p>
                 <h2 class="card-header">Liquid Dreams</h2>
                 <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Eos possimus facere, facilis dicta neque 
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Eos possimus facere, facilis dicta neque
                     assumenda saepe esse quis deleniti. Placeat.
                 </p>
                 <p class="card-text">
@@ -39,8 +120,8 @@
                 <p class="card-theme">Something</p>
                 <h2 class="card-header">Amogus</h2>
                 <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Eos possimus facere, facilis dicta neque 
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Eos possimus facere, facilis dicta neque
                     assumenda saepe esse quis deleniti. Placeat.
                 </p>
                 <a href="" class="card-link">To Project</a>
@@ -54,8 +135,8 @@
                 <p class="card-theme">Something</p>
                 <h2 class="card-header">Amogus</h2>
                 <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Eos possimus facere, facilis dicta neque 
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Eos possimus facere, facilis dicta neque
                     assumenda saepe esse quis deleniti. Placeat.
                 </p>
                 <a href="" class="card-link">To Project</a>
@@ -76,4 +157,5 @@
     <!-- #endregion Scripts -->
 
 </body>
+
 </html>
