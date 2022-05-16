@@ -1,15 +1,15 @@
 //Internal Links
 function Home() {window.open("../index.html", "_top"); }
 //Portfolio Links
-function Dreams() {window.open("../index", "_top"); }
-function Panda() {window.open("../index", "_top"); }
-function Poly() {window.open("../index", "_top"); }
-function XDPortfolio() {window.open("../index", "_top"); }
-function Shape() {window.open("../index", "_top"); }
+function Dreams() {window.open("#", "_top"); }
+function Panda() {window.open("#", "_top"); }
+function Poly() {window.open("#", "_top"); }
+function XDPortfolio() {window.open("#", "_top"); }
+function Shape() {window.open("#", "_top"); }
 function PortfolioMore() {window.open("./Views/portfolio.html", "_top"); }
 //Information Links
 function AboutMe() {window.open("../Views/about.html", "_top"); }
-function Credits() {window.open("../index", "_top"); }
+function Credits() {window.open("#", "_top"); }
 // External Links
 function Twitter() {window.open("https://twitter.com/Josh_HeroTV", "_blank"); }
 function Behance() {window.open("https://www.behance.net/Josh_Hero", "_blank"); }
