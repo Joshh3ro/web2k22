@@ -58,6 +58,3 @@ anime.timeline()
     duration: 2000,
     delay: (el, i) => 100 + 50 * i
 });
-
-
-

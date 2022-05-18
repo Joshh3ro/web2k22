@@ -1,3 +1,7 @@
+// Why are my links handled in js??
+// the simple answer is because the animations on my navigation 
+// messes with the a tags and breaks any chance of the hrefs working
+
 //Internal Links
 function Home() {window.open("../index.html", "_top"); }
 //Portfolio Links
